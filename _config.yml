@@ -15,9 +15,12 @@ description: Write an awesome description for your new site here. You can edit t
 baseurl: ''
 url: ''
 twitter_username: onemohrtime
-github_username: onemohrtime
-keep_files:
-- ".git"
+github_username:  onemohrtime
+
+# Build settings
+keep_files: ['.git']
+theme: 'jekyll-athena'
+sass: compressed
 markdown: kramdown
 plugins:
 - jekyll-feed
