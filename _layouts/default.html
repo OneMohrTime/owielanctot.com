@@ -5,24 +5,57 @@
 	<meta charset="utf-8">
 	<title>{{ site.title }}</title>
 	<link rel="stylesheet" href="/assets/style.css">
+	<link rel="stylesheet" href="/assets/css/theme.css">
 </head>
 
-<body>
-	<header>
-		<nav>
-			<a href="/">Home</a>
-			<a href="/blog/">Blog</a>
-		</nav>
-	</header>
-	<main>
-		<h1>{{ site.title }}</h1>
-		<section>
-			{{ content }}
-		</section>
-	</main>
-	<footer>
-		&copy; to me
-	</footer>
+<body class="font-smoothing">
+	<div class="site">
+		
+		<figure class="site__banner col-6 sm-width-full left">
+			<img src="/assets/images/0.jpg" alt="" class="banner__image px-3 py-3" />
+			<figcaption class="banner__caption"></figcaption>
+		</figure>
+		
+		<main class="site__body col-6 sm-width-full right container mx-auto px-3">
+			<header class="header-text mb-3">
+				
+				<h1 class="h0 inline-block py-2 mt-4 header-title">
+					Olivia &ldquo;Owie&rdquo; Lanctot
+				</h1>
+				
+				<p class="h4 lh-condensed font-smoothing">Outsides Sales at Automated Logistics Systems</p>
+				<div class="col-1 sm-width-full border-top-thick"></div>
+				
+			</header>
+			<article id="content" class="prose mt-3 py-3">
+				
+				<p>Experienced Outside Sales Representative with a demonstrated history of working in the logistics and supply chain industry. Skilled in Sales, Public Speaking, Management, and Strategy. Business professional with a Masters of Business Administration.</p>
+				
+				<section id="accordion" class="js-Accordion">
+					<button class="js-Accordion-title">Work History</button>
+					<div class="js-Accordion-content">
+						<p>Experienced Outside Sales Representative with a demonstrated history of working in the logistics and supply chain industry. Skilled in Sales, Public Speaking, Management, and Strategy. Business professional with a Masters of Business Administration.</p>
+					</div>
+				</section>
+				
+			</article>
+			<footer>
+				<section class="copyright">
+					&copy; Olivia Lanctot
+				</section>
+				<nav class="social">
+					<ul>
+						<li><a href="#">Email</a></li>
+						<li><a href="#">LinkedIn</a></li>
+					</ul>
+				</nav>
+			</footer>
+		</main>
+		
+	</div>
+	
+	<script src="/assets/js/vanilla-js-accordion.min.js"></script>
+	<script src="/assets/js/main.js"></script>
 </body>
 
 </html>

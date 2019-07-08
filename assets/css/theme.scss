@@ -1,0 +1,27 @@
+---
+---
+
+// Utilities
+//@import '../../_sass/utilities/variables';
+
+// Layout
+//@import '../../_sass/layout/_site';
+
+// Components
+//@import '../../_sass/components/banner';
+
+.site {
+	background: #fff url("https://www.toptal.com/designers/subtlepatterns/patterns/linedpaper.png") repeat;
+}
+
+.site__banner {
+	position: sticky;
+	top: 0;
+	height: 100vh;
+}
+
+.banner__image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}

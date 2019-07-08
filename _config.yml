@@ -19,7 +19,8 @@ github_username: onemohrtime
 keep_files:
 - ".git"
 theme: jekyll-athena
-sass: compressed
+sass:
+  style: compressed
 markdown: kramdown
 plugins:
 - jekyll-feed
