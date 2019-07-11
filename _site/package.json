@@ -1,0 +1,22 @@
+{
+  "name": "owielanctot.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OneMohrTime/owielanctot.com.git"
+  },
+  "author": "Derek Mohr <derek@onemohrti.me>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OneMohrTime/owielanctot.com/issues"
+  },
+  "homepage": "https://github.com/OneMohrTime/owielanctot.com#readme",
+  "dependencies": {
+    "include-media": "^1.4.9"
+  }
+}
