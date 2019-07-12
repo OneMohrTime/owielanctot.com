@@ -8,6 +8,8 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.6.0)
       public_suffix (>= 2.0.2, < 4.0)
+    autoprefixer-rails (9.6.1)
+      execjs
     backports (3.15.0)
     coffee-script (2.4.1)
       coffee-script-source
@@ -106,7 +108,8 @@ GEM
       jekyll (~> 3.1)
       sinatra (~> 1.4)
       sinatra-contrib (~> 1.4)
-    jekyll-athena (0.0.2)
+    jekyll-autoprefixer (1.0.2)
+      autoprefixer-rails (~> 9.3)
     jekyll-avatar (0.6.0)
       jekyll (~> 3.0)
     jekyll-coffeescript (1.1.1)
@@ -273,7 +276,7 @@ DEPENDENCIES
   github-pages (~> 197)
   jekyll (~> 3.7.4)
   jekyll-admin (~> 0.1.1)
-  jekyll-athena (~> 0.0.2)
+  jekyll-autoprefixer (~> 1.0)
   jekyll-feed (~> 0.6)
   tzinfo (~> 1.2)
   tzinfo-data

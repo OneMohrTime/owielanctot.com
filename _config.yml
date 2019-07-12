@@ -18,8 +18,8 @@ twitter_username: onemohrtime
 github_username: onemohrtime
 keep_files:
 - ".git"
-theme: jekyll-athena
 sass:
+  sass_dir: ./_scss
   style: compressed
 markdown: kramdown
 plugins:
