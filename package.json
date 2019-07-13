@@ -1,0 +1,8 @@
+{
+  "name": "owielanctot.com",
+  "version": "1.0.0",
+  "main": "index.html",
+  "repository": "git@github.com:OneMohrTime/owielanctot.com.git",
+  "author": "Derek Mohr <derek@mightyinthemidwest.com>",
+  "license": "MIT"
+}
