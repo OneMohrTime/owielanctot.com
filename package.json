@@ -1,22 +1,11 @@
 {
-  "name": "owielanctot.com",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/OneMohrTime/owielanctot.com.git"
-  },
-  "author": "Derek Mohr <derek@onemohrti.me>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/OneMohrTime/owielanctot.com/issues"
-  },
-  "homepage": "https://owielanctot.com",
   "dependencies": {
-    "include-media": "^1.4.9"
+    "@symfony/webpack-encore": "^0.24.0",
+    "bootstrap": "^4.3.1",
+    "highlightjs": "^9.12.0",
+    "jquery": "^3.3.1",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.0.1",
+    "popper.js": "^1.14.7"
   }
 }
