@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en-US no-js">
+
+<head>
+	<title>{{ site.title }} | {{ site.subtitle }}</title>
+	<meta charset="utf-8" />
+	<meta name="theme-color" content="#ffffff" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	
+	{% block head_meta %}
+	<meta name="robots" content="noindex, follow" />
+	{% endblock %}
+	
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&display=swap" />
+	<link rel="stylesheet" href="{{ site.url }}/build/app.css" />
+
+	<link rel="apple-touch-startup-image" href="{{ site.url }}/build/2048x2048.png" />
+	<meta name="mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<link rel="shortcut icon" sizes="76x76" href="{{ site.url }}/build/jackson/76x76.png" />
+	<link rel="shortcut icon" sizes="120x120" href="{{ site.url }}/build/jackson/120x120.png" />
+	<link rel="shortcut icon" sizes="128x128" href="{{ site.url }}/build/jackson/128x128.png" />
+	<link rel="shortcut icon" sizes="152x152" href="{{ site.url }}/build/jackson/152x152.png" />
+	<link rel="shortcut icon" sizes="196x196" href="{{ site.url }}/build/jackson/196x196.png" />
+	<link rel="shortcut icon" sizes="512x512" href="{{ site.url }}/build/jackson/512x512.png" />
+	<link rel="shortcut icon" sizes="1024x1024" href="{{ site.url }}/build/jackson/1024x1024.png" />
+	<link rel="shortcut icon" sizes="2048x2048" href="{{ site.url }}/build/jackson/2048x2048.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="{{ site.url }}/build/jackson/76x76.png" />
+	<link rel="apple-touch-icon" sizes="120x120" href="{{ site.url }}/build/jackson/120x120.png" />
+	<link rel="apple-touch-icon" sizes="128x128" href="{{ site.url }}/build/jackson/128x128.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="{{ site.url }}/build/jackson/152x152.png" />
+	<link rel="apple-touch-icon" sizes="196x196" href="{{ site.url }}/build/jackson/196x196.png" />
+	<link rel="apple-touch-icon" sizes="512x512" href="{{ site.url }}/build/jackson/512x512.png" />
+	<link rel="apple-touch-icon" sizes="1024x1024" href="{{ site.url }}/build/jackson/1024x1024.png" />
+	<link rel="apple-touch-icon" sizes="2048x2048" href="{{ site.url }}/build/jackson/2048x2048.png" />
+
+	<link rel="alternate" type="application/atom+xml" href="{{ site.url }}/atom.xml" title="{{ site.title }} activity feed" />
+	{% block head_styles %}
+	{% endblock %}
+	{% block head_scripts %}
+	{% endblock %}
+</head>
+
+<body>
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-19790921-4"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-19790921-4');
+	</script>
+	<div class="site">
+		
+		<figure class="site__banner">
+			<img src="{{ theme_path("/assets/images/o-l.jpg") }}" alt="" class="banner__image" />
+			<figcaption class="banner__caption"></figcaption>
+		</figure>
+		
+		<main class="site__body">
+			<header class="">
+				
+				<h1 class="">
+					{{ site.title }}
+				</h1>
+				{% if site.subtitle %}
+					<p>{{ site.subtitle }}</p>
+				{% endif %}
+				
+			</header>
+			<article id="content" class="">
+				
+				<p>Experienced Outside Sales Representative with a demonstrated history of working in the logistics and supply chain industry. Skilled in Sales, Public Speaking, Management, and Strategy. Business professional with a Masters of Business Administration.</p>
+				
+				<section id="accordion" class="button js-Accordion">
+					<button class="button js-Accordion-title">Work History</button>
+					<div class="js-Accordion-content">
+						<p>Experienced Outside Sales Representative with a demonstrated history of working in the logistics and supply chain industry. Skilled in Sales, Public Speaking, Management, and Strategy. Business professional with a Masters of Business Administration.</p>
+					</div>
+				</section>
+				
+			</article>
+			<footer>
+				<section class="copyright">
+					&copy; Olivia Lanctot
+				</section>
+				<nav class="social">
+					<ul>
+						<li><a href="#">Email</a></li>
+						<li><a href="#">LinkedIn</a></li>
+					</ul>
+				</nav>
+			</footer>
+		</main>
+		
+		<!--
+		<main role="main" class="container">
+			<div class="row">
+				<div class="col-sm-8">
+					{% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
+				</div>
+				<div class="col-sm-4 sidebar">
+					<div class="card bg-light">
+						<div class="card-header">{{ site.title }}</div>
+						<div class="card-body">
+							{% if site.subtitle %}<small>{{ site.subtitle }}</small>{% endif %}
+						</div>
+					</div>
+					<div class="card bg-light sidebar-nav">
+						<div class="card-header">Links</div>
+						<div class="card-body">
+							<ul class="nav flex-column">
+								<li class="nav-item"><a class="nav-link" href="http://sculpin.io">sculpin.io</a></li>
+								<li class="nav-item"><a class="nav-link" href="http://twitter.com/getsculpin">@getsculpin</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="container">
+			<span class="text-muted">&copy; {{ "now"|date("Y") }} {{ site.title }}</span>
+		</footer>
+		-->
+	</div>
+
+	<script src="{{ site.url }}/build/app.js"></script>
+<!--	<script src="/assets/js/vanilla-js-accordion.min.js"></script>-->
+	
+</body>
+
+</html>
