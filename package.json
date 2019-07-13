@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/OneMohrTime/owielanctot.com/issues"
   },
-  "homepage": "https://github.com/OneMohrTime/owielanctot.com#readme",
+  "homepage": "https://owielanctot.com",
   "dependencies": {
     "include-media": "^1.4.9"
   }
