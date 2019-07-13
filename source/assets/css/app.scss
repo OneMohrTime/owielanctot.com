@@ -1,33 +1,19 @@
-@import "../../../node_modules/bootstrap/scss/bootstrap";
-@import "../../../node_modules/highlightjs/styles/github.css";
+@charset "utf-8";
 
-small {
-    display: block;
-    color: #888;
-}
+// Vendor
+@import
+//	"../../../node_modules/bootstrap/scss/bootstrap",
+//	"../../../node_modules/highlightjs/styles/github.css",
+	"vendor/bourbon/bourbon",
+	"vendor/base/base",
+	"vendor/vanilla-js-accordion";
 
-main.container, footer.container {
-    max-width: 900px;
-}
+// Utilities
+@import "utilities/variables";
 
-footer.container {
-    margin-top: 30px;
-    padding: 30px 0;
-    border-top: 1px dashed #aaa;
-}
+// Layout
+@import "layout/_site";
 
-@media (max-width: 767px) {
-    .sidebar {
-        padding-top: 30px;
-    }
-}
+// Components
+@import "components/banner";
 
-@media (min-width: 980px) {
-    body {
-        padding-bottom: 40px;
-    }
-}
-
-body > main.container {
-    padding: 80px 15px 0; /* 80px to make the container go all the way to the bottom of the topbar */
-}
