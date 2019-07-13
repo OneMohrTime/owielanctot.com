@@ -38,3 +38,22 @@ $focus-outline-offset: 2px;
 // Animations
 $base-duration: 200ms;
 $base-timing: ease;
+
+// Neat Grid
+$neat-grid: (
+	columns: 12,
+	gutter: $base-spacing,
+	media: 541px
+);
+
+$neat-grid--mobile: (
+	columns: 12,
+	gutter: $small-spacing,
+	media: "screen and (min-width: 540px)",
+);
+
+$neat-grid--print: (
+	columns: 12,
+	gutter: $small-spacing,
+	media: print,
+);
