@@ -1,0 +1,24 @@
+/* ----------------------------------------
+ * Layout / Typography
+ * ------------------------------------- */
+
+h1, h2, h3,
+h4, h5, h6 {
+	position: relative;
+}
+
+h1 {
+	font-size: ms(3);
+}
+
+h2 {
+	font-size: ms(2);
+}
+
+h3 {
+	font-size: ms(1);
+}
+
+h4 {
+	font-size: ms(0);
+}

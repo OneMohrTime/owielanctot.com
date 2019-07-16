@@ -1,0 +1,23 @@
+/* ----------------------------------------
+ * Layout / Site
+ * ------------------------------------- */
+
+.site {
+	@include grid-container();
+}
+
+.site__banner {
+	@include grid-column(12);
+
+	@include grid-media($neat-grid, $neat-grid--mobile) {
+		@include grid-column(6);
+	}
+}
+
+.site__body {
+	@include grid-column(12);
+
+	@include grid-media($neat-grid, $neat-grid--mobile) {
+		@include grid-column(6);
+	}
+}
