@@ -1,0 +1,38 @@
+/* ----------------------------------------
+ * Utilities / Mixins
+ * ------------------------------------- */
+
+@mixin tab-style() {
+	margin-bottom: $base-spacing;
+	padding: 0 0 $base-spacing;
+	border-bottom: $base-border;
+	border-radius: 0;
+	background-color: transparent;
+	color: inherit;
+	text-align: left;
+	
+	& > .tab__headline {
+		@include ellipsis();
+		display: block;
+		margin-bottom: $small-spacing / 2;
+		font-size: modular-scale(3);
+	}
+	
+	& > .tab__subheadline {
+		display: inline-block;
+		font-size: modular-scale(1);
+	}
+	
+	& > .tab__datetime {
+		display: inline-block;
+		font-size: modular-scale(1);
+		
+		&::before {
+			content: " | ";
+		}
+	}
+}
+
+@mixin button-style() {
+	
+}

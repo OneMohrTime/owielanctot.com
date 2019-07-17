@@ -8,6 +8,6 @@ require('../css/app.scss');
 
 var accordion = new Accordion({
 	element: 'accordion',
-	openTab: 0,
+	openTab: 1,
 	oneOpen: false
 });
