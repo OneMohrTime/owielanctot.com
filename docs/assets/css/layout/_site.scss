@@ -8,6 +8,7 @@
 
 .site__banner {
 	@include grid-column(12);
+	height: 100vh;
 
 	@include grid-media($neat-grid, $neat-grid--mobile) {
 		@include grid-column(6);
@@ -16,6 +17,9 @@
 
 .site__body {
 	@include grid-column(12);
+	height: 100vh;
+	max-height: 100vh;
+	overflow: auto;
 
 	@include grid-media($neat-grid, $neat-grid--mobile) {
 		@include grid-column(6);

@@ -1,5 +1,5 @@
 // Typography
-$base-font-family: "Playfair Display", $font-stack-garamond;
+$base-font-family: "Crimson Text", $font-stack-hoefler-text;
 $heading-font-family: $base-font-family;
 
 // Line height
@@ -22,9 +22,15 @@ $light-gray: #ddd;
 $base-font-color: $dark-gray;
 $action-color: $blue;
 
+// Font Sizes
+$bourbon: (
+	"modular-scale-base": 1em,
+	"modular-scale-ratio": $perfect-fourth,
+);
+
 // Border
 $base-border-color: $light-gray;
-$base-border: 1px solid $base-border-color;
+$base-border: 2px $base-border-color solid;
 
 // Background Colors
 $viewport-background-color: #fff;

@@ -1,0 +1,19 @@
+/* ----------------------------------------
+ * Layout / Page
+ * ------------------------------------- */
+
+.page {}
+
+.page__section {
+	height: 100vh;
+}
+
+.page__intro {
+	
+	@supports (display: flex) {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	}
+}
