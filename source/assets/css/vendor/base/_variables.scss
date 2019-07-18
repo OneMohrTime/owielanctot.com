@@ -13,10 +13,14 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$blue: #1565c0;
-$dark-gray: #333;
-$medium-gray: #999;
-$light-gray: #ddd;
+$blue: #3185FC;
+$white: #fdfcfb;
+$dark-gray: #2B2A28;
+$darkish-gray: #403F4C;
+$medium-gray: #95928B;
+$light-gray: #D4D0C7;
+$red: #E84855;
+$yellow: #F9DC5C;
 
 // Font Colors
 $base-font-color: $dark-gray;
@@ -49,17 +53,5 @@ $base-timing: ease;
 $neat-grid: (
 	columns: 12,
 	gutter: $base-spacing,
-	media: 541px
-);
-
-$neat-grid--mobile: (
-	columns: 12,
-	gutter: $small-spacing,
-	media: "screen and (min-width: 540px)",
-);
-
-$neat-grid--print: (
-	columns: 12,
-	gutter: $small-spacing,
-	media: print,
+	media: all,
 );

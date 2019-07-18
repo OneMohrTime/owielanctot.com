@@ -8,31 +8,39 @@ h4, h5, h6 {
 	font-weight: 600;
 }
 
-h1 {
-	font-size: modular-scale(5);
-}
-
-h2 {
-	font-size: modular-scale(4);
-}
-
-h3 {
-	font-size: modular-scale(3);
-}
-
-h4 {
-	font-size: modular-scale(2);
-}
-
-h5 {
-	font-size: modular-scale(1);
-}
-
-h6 {
-	font-size: modular-scale(0);
+::selection {
+	background-color: $blue;
+	color: $white;
 }
 
 .prose {
 	max-width: 700px;
-	font-size: modular-scale(1);
+	
+	h1 {
+		font-size: modular-scale(5);
+	}
+
+	h2 {
+		font-size: modular-scale(4);
+	}
+
+	h3 {
+		font-size: modular-scale(3);
+	}
+
+	h4 {
+		font-size: modular-scale(2);
+	}
+
+	h5 {
+		font-size: modular-scale(1);
+	}
+
+	h6 {
+		font-size: modular-scale(0);
+	}
+	
+	p, ul, ol, dl {
+		font-size: modular-scale(1);
+	}
 }

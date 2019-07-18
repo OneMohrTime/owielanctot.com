@@ -2,15 +2,27 @@
  * Layout / Site
  * ------------------------------------- */
 
+body {
+	background-color: #F7F5F1;
+	background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+}
+
 .site {
 	@include grid-container();
+	max-width: 1280px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: map-get($gutter, sm);
+	padding-right: map-get($gutter, sm);
+	background-color: $white;
+	background-image: url("https://www.transparenttextures.com/patterns/notebook.png");
 }
 
 .site__banner {
 	@include grid-column(12);
 	height: 100vh;
 
-	@include grid-media($neat-grid, $neat-grid--mobile) {
+	@include media('>=540px') {
 		@include grid-column(6);
 	}
 }
@@ -21,7 +33,7 @@
 	max-height: 100vh;
 	overflow: auto;
 
-	@include grid-media($neat-grid, $neat-grid--mobile) {
+	@include media('>=540px') {
 		@include grid-column(6);
 	}
 }
