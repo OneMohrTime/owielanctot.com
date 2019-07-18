@@ -6,8 +6,14 @@ require('../css/app.scss');
 //
 //hljs.initHighlightingOnLoad();
 
-var accordion = new Accordion({
-	element: 'accordion',
-	openTab: 1,
-	oneOpen: false
+const jsAccordions = document.querySelectorAll('.js-Accordion');
+
+jsAccordions.forEach(function(el, i) {
+	i++
+	let accordionID = 'accordion_' + i,
+		accordion   = new Accordion({
+			element: accordionID,
+			openTab: 1,
+			oneOpen: false
+		});
 });

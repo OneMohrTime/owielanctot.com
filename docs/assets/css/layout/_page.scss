@@ -5,7 +5,28 @@
 .page {}
 
 .page__section {
-	height: 100vh;
+	height: auto;
+	min-height: 100vh;
+	padding-left: map-get($gutter, sm);
+	padding-right: map-get($gutter, sm);
+	
+	&.prose {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		padding: 0 map-get($gutter, lg);
+		color: $darkish-gray;
+		
+		h3 {
+			font-size: modular-scale(2);
+		}
+		
+		p {
+			padding-left: map-get($gutter, lg);
+			border-left: $base-border;
+		}
+	}
 }
 
 .page__intro {
@@ -16,4 +37,23 @@
 		justify-content: center;
 		align-items: flex-start;
 	}
+	
+	.intro__headline {
+		font-size: modular-scale(6);
+		margin-bottom: map-get($gutter, sm);
+	}
+	
+	.intro__subheadline {
+		margin-bottom: 0;
+		font-style: italic;
+		font-weight: 400;
+	}
+}
+
+.section__headline {
+	font-size:  modular-scale(2);
+}
+
+.section__intro {
+	margin-bottom: $base-spacing * 3;
 }

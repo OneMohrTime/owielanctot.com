@@ -1,5 +1,7 @@
 {
   "build/app.js": "/build/app.js",
+  "build/arrow-down--black.svg": "/build/arrow-down--black.svg",
+  "build/arrow-down--white.svg": "/build/arrow-down--white.svg",
   "build/jackson/1024x1024.png": "/build/jackson/1024x1024.png",
   "build/jackson/120x120.png": "/build/jackson/120x120.png",
   "build/jackson/128x128.png": "/build/jackson/128x128.png",

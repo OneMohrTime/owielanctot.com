@@ -14,3 +14,10 @@
 	padding: $base-spacing * 2;
 	object-fit: cover;
 }
+
+.banner__caption {
+	position: absolute;
+	left: $base-spacing;
+	bottom: $base-spacing * 2;
+	z-index: 10;
+}
