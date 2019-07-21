@@ -16,8 +16,13 @@
 }
 
 .banner__caption {
-	position: absolute;
-	left: $base-spacing;
-	bottom: $base-spacing * 2;
-	z-index: 10;
+	@include hide-visually;
+	
+	@include media(">=1170px") {
+		@include hide-visually("unhide");
+		position: absolute;
+		left: $base-spacing;
+		bottom: $base-spacing * 2;
+		z-index: 10;
+	}
 }

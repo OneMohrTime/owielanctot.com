@@ -5,7 +5,7 @@
 @mixin tab-style() {
 	margin-bottom: $small-spacing;
 	padding: $small-spacing 0;
-	font-size: modular-scale(3);
+	font-size: modular-scale(1);
 	text-align: left;
 	border-bottom: $base-border;
 	border-radius: 0;
@@ -21,6 +21,10 @@
 		background: transparent url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUwIiB3aWR0aD0iNTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibS0xLTFoNTgydjQwMmgtNTgyeiIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Im0wIDBoNTB2NTBoLTUweiIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Im00Ny4yNSAxNS0yLjA4Ni0yLjA4Ni0yMC4xNjQgMjAuMTY0LTIwLjE2NC0yMC4xNjQtMi4wODYgMi4wODYgMjIuMjUgMjIuMjV6IiBmaWxsPSIjNDAzZjRjIi8+PC9zdmc+) no-repeat scroll;
 		background-position: center right;
 		background-size: 25px 25px;
+	}
+	
+	@include media(">=1170px") {
+		font-size: modular-scale(3);
 	}
 }
 
