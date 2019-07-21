@@ -16,31 +16,24 @@ h4, h5, h6 {
 .prose {
 	max-width: 700px;
 	
-	h1 {
-		font-size: modular-scale(5);
+	@include media(">=540px") {
+		h1 { font-size: modular-scale(3); }
+		h2 { font-size: modular-scale(2); }
+		h3 { font-size: modular-scale(1); }
 	}
-
-	h2 {
-		font-size: modular-scale(4);
-	}
-
-	h3 {
-		font-size: modular-scale(3);
-	}
-
-	h4 {
-		font-size: modular-scale(2);
-	}
-
-	h5 {
-		font-size: modular-scale(1);
-	}
-
-	h6 {
-		font-size: modular-scale(0);
+	
+	@include media(">=1170px") {
+		h1 { font-size: modular-scale(5); }
+		h2 { font-size: modular-scale(4); }
+		h3 { font-size: modular-scale(3); }
+		h4 { font-size: modular-scale(2); }
+		h5 { font-size: modular-scale(1); }
+		h6 { font-size: modular-scale(0); }
 	}
 	
 	p, ul, ol, dl {
-		font-size: modular-scale(1);
+		@include media(">=1170px") {
+			font-size: modular-scale(1);
+		}
 	}
 }
