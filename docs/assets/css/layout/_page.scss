@@ -6,7 +6,7 @@
 
 .page__section {
 	height: auto;
-	min-height: 100vh;
+	min-height: 50vh;
 	padding-left: map-get($gutter, sm);
 	padding-right: map-get($gutter, sm);
 	
@@ -27,9 +27,14 @@
 			border-left: $base-border;
 		}
 	}
+	
+	@include media('>=540px') {
+		min-height: 100vh;
+	}
 }
 
 .page__intro {
+	min-height: 0;
 	
 	@supports (display: flex) {
 		display: flex;
@@ -38,9 +43,17 @@
 		align-items: flex-start;
 	}
 	
+	@include media(">=540px") {
+		min-height: 100vh;
+	}
+	
 	.intro__headline {
 		font-size: modular-scale(3);
 		margin-bottom: map-get($gutter, sm);
+		
+		span {
+			font-style: italic;
+		}
 		
 		@include media(">=1170px") {
 			font-size: modular-scale(6);
@@ -49,7 +62,6 @@
 	
 	.intro__subheadline {
 		margin-bottom: 0;
-		font-style: italic;
 		font-weight: 400;
 	}
 }
