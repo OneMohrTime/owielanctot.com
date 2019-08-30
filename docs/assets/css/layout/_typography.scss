@@ -8,6 +8,57 @@ h4, h5, h6 {
 	font-weight: 600;
 }
 
+summary {
+	padding: $small-spacing 0;
+	border-bottom: $base-border;
+	transition: border $base-duration;
+	cursor: pointer;
+	
+	&::marker {
+		display: none;
+	}
+	
+	&::-webkit-details-marker {
+		display: none;
+	}
+}
+
+details {
+	margin-bottom: map-get($gutter, md);
+	
+	.prose {
+		margin: 0;
+		padding: map-get($gutter, sm);
+		text-align: justify;
+		hyphens: auto;
+		box-shadow: 0 1px 3px fade-out(map-get($color, dark-gray), 0.88),
+					0 1px 2px fade-out(map-get($color, dark-gray), 0.76);
+		z-index: 2;
+	}
+}
+
+
+details[open] {
+	
+	& > summary {
+		border-color: transparent;
+		color: $action-color;
+	}
+	
+	.prose {
+		animation: detailSummary .3s
+	}
+}
+
+@keyframes detailSummary {
+	0% {
+		opacity: 0
+	}
+	100% {
+		opacity: 1
+	}
+}
+
 ::selection {
 	background-color: $blue;
 	color: $white;
@@ -30,6 +81,8 @@ h4, h5, h6 {
 		h5 { font-size: modular-scale(1); }
 		h6 { font-size: modular-scale(0); }
 	}
+	
+//	@include media('>=1280px') {}
 	
 	p, ul, ol, dl {
 		@include media(">=1170px") {

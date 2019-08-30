@@ -3,19 +3,31 @@
  * ------------------------------------- */
 
 body {
-	background-color: #F7F5F1;
-	background-image: url("https://www.transparenttextures.com/patterns/natural-paper.png");
+	border-left: 10px $action-color solid;
+	border-right: 10px $action-color solid;
+
+	&::before,
+	&::after {
+		content: "";
+		position: fixed;
+		left: 0;
+		right: 0;
+		height: 10px;
+		background-color: $action-color;
+	}
+	&::before {
+		top: 0;
+	}
+	&::after {
+		bottom: 0;
+	}
 }
 
 .site {
 	@include grid-container();
-	max-width: 1280px;
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: map-get($gutter, sm);
-	padding-right: map-get($gutter, sm);
 	background-color: $white;
 	background-image: url("https://www.transparenttextures.com/patterns/notebook.png");
+	background-repeat: repeat;
 }
 
 .site__banner {

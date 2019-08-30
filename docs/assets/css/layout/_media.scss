@@ -1,7 +1,8 @@
 /* ----------------------------------------
- * Compontents / Buttons
+ * Layout / Media
  * ------------------------------------- */
 
-//.button--tab {
-//	@include tab-style();
-//}
+img,
+picture {
+	display: block;
+}
