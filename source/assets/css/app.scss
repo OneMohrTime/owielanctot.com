@@ -8,8 +8,8 @@
 	"vendor/neat/neat",
 	"vendor/base/base",
 	"vendor/include-media",
-	"vendor/modularscale/modularscale",
-	"vendor/vanilla-js-accordion";
+	"vendor/modularscale/modularscale";
+//	"vendor/vanilla-js-accordion";
 
 // Utilities
 @import
@@ -18,13 +18,15 @@
 
 // Layout
 @import
-	"layout/_typography",
-	"layout/_site",
-	"layout/_page";
+	"layout/typography",
+	"layout/media",
+	"layout/site",
+	"layout/page";
 
 // Components
 @import
 	"components/banner",
 	"components/buttons",
+	"components/instagram",
 	"components/tabs";
 

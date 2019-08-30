@@ -15,14 +15,12 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: flex-start;
-		padding: 0 map-get($gutter, lg);
-		color: $darkish-gray;
 		
 		h3 {
 			font-size: modular-scale(2);
 		}
 		
-		p {
+		p:only-of-type {
 			padding-left: map-get($gutter, lg);
 			border-left: $base-border;
 		}
@@ -78,6 +76,23 @@
 
 .section__headline {
 	font-size:  modular-scale(2);
+	
+	em {
+		position: absolute;
+		transform: rotate(-15deg) translate3d(-0.5rem, -1.1em, 0);
+		text-transform: lowercase;
+		color: $action-color;
+	}
+}
+
+.section__subheadline {
+	margin-top: $small-spacing / 2;
+	margin-bottom: $small-spacing / 2;
+}
+
+.section__datetime {
+	display: block;
+	margin-bottom: $base-spacing;
 }
 
 .section__intro {
