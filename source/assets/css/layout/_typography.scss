@@ -13,11 +13,11 @@ summary {
 	border-bottom: $base-border;
 	transition: border $base-duration;
 	cursor: pointer;
-	
+
 	&::marker {
 		display: none;
 	}
-	
+
 	&::-webkit-details-marker {
 		display: none;
 	}
@@ -25,26 +25,25 @@ summary {
 
 details {
 	margin-bottom: map-get($gutter, md);
-	
+
 	.prose {
 		margin: 0;
 		padding: map-get($gutter, sm);
 		text-align: justify;
 		hyphens: auto;
-		box-shadow: 0 1px 3px fade-out(map-get($color, dark-gray), 0.88),
-					0 1px 2px fade-out(map-get($color, dark-gray), 0.76);
+		@include box-shadow();
 		z-index: 2;
 	}
 }
 
 
 details[open] {
-	
+
 	& > summary {
 		border-color: transparent;
 		color: $action-color;
 	}
-	
+
 	.prose {
 		animation: detailSummary .3s
 	}
@@ -65,14 +64,13 @@ details[open] {
 }
 
 .prose {
-	max-width: 700px;
-	
-	@include media(">=540px") {
+
+	@include media(">=640px") {
 		h1 { font-size: modular-scale(3); }
 		h2 { font-size: modular-scale(2); }
 		h3 { font-size: modular-scale(1); }
 	}
-	
+
 	@include media(">=1170px") {
 		h1 { font-size: modular-scale(5); }
 		h2 { font-size: modular-scale(4); }
@@ -81,10 +79,18 @@ details[open] {
 		h5 { font-size: modular-scale(1); }
 		h6 { font-size: modular-scale(0); }
 	}
-	
+
 //	@include media('>=1280px') {}
-	
+
 	p, ul, ol, dl {
+		max-width: 80ch;
+		orphans: 3;
+		widows: 3;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
 		@include media(">=1170px") {
 			font-size: modular-scale(1);
 		}

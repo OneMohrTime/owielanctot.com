@@ -6,11 +6,11 @@
 	<meta charset="utf-8" />
 	<meta name="theme-color" content="#ffffff" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-	
+
 	{% block head_meta %}
 	<meta name="robots" content="noindex, follow" />
 	{% endblock %}
-	
+
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i&display=swap" />
 	<link rel="stylesheet" href="{{ site.url }}/build/app.css" />
 
@@ -42,7 +42,7 @@
 </head>
 
 <body>
-	
+
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-19790921-4"></script>
 	<script>
@@ -53,40 +53,38 @@
 		gtag('config', 'UA-19790921-4');
 	</script>
 	<div class="site">
-		
+
 		<figure class="site__banner">
 			<img src="{{ theme_path("assets/images/owie-lanctot-profile.jpg") }}" alt="Owie Lanctot" class="banner__image" />
 			<figcaption class="banner__caption">
-				<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="derekmohr"><a class="LI-simple-link" href='https://www.linkedin.com/in/derekmohr?trk=profile-badge'>Derek Mohr</a></div>
+				<!-- Photo by _______ -->
 			</figcaption>
 		</figure>
-		
+
 		<main class="site__body page">
 			<header class="page__section page__intro">
-				
-			<h1 class="intro__headline">Olivia <span>“Owie”</span> Lanctot</h1>
-				{% if site.subtitle %}
-					<h2 class="intro__subheadline">{{ site.subtitle }}</h2>
-				{% endif %}
-				
+
+			<h1 class="intro__headline"><span>Olivia</span> <span class="nickname">“Owie”</span> <span>Lanctot</span></h1>
+			<h2 class="intro__subheadline">{{ site.subtitle ? site.subtitle : 'The name says it all.' }}</h2>
+
 			</header>
 			<article id="content" class="page__content">
-				
+
 				<section class="page__section prose">
 					<h3 class="section__headline">This is me.</h3>
 					<p>Experienced Outside Sales Representative with a demonstrated history of working in the logistics and supply chain industry. Skilled in Sales, Public Speaking, Management, and Strategy. Business professional with a Masters of Business Administration.</p>
 					<p>Experienced Outside Sales Representative with a demonstrated history of working in the logistics and supply chain industry. Skilled in Sales, Public Speaking, Management, and Strategy. Business professional with a Masters of Business Administration.</p>
 				</section>
-				
+
 				<section class="page__section instagram">
 					<h3 class="section__headline"><em>And</em> this is Sunshine.</h3>
 					<div id="instafeed" class="instagram__feed"></div>
 				</section>
-				
+
 				<section class="page__section">
 					<h3 class="section__headline"><em>And</em> here&rsquo;s some work I&rsquo;ve done.</h3>
 					<p class="section__intro">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
-					
+
 					<details class="button--tab tab">
 						<summary class="section__headline">Automated Logistic Systems</summary>
 						<div class="prose">
@@ -95,7 +93,7 @@
 							<p>Experienced Outside Sales Representative with a demonstrated history of working in the logistics and supply chain industry. Skilled in Sales, Public Speaking, Management, and Strategy. Business professional with a Masters of Business Administration.</p>
 						</div>
 					</details>
-					
+
 					<details class="button--tab tab">
 						<summary class="section__headline">Automated Logistic Systems</summary>
 						<div class="prose">
@@ -105,11 +103,11 @@
 						</div>
 					</details>
 				</section>
-				
+
 				<section class="page__section">
 					<h2 class="section__headline"><em>And</em> here&rsquo;s some schools I&rsquo;ve gone to.</h2>
 					<p class="section__intro">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
-					
+
 					<details class="button--tab tab">
 						<summary class="section__headline">Automated Logistic Systems</summary>
 						<div class="prose">
@@ -118,7 +116,7 @@
 							<p>Experienced Outside Sales Representative with a demonstrated history of working in the logistics and supply chain industry. Skilled in Sales, Public Speaking, Management, and Strategy. Business professional with a Masters of Business Administration.</p>
 						</div>
 					</details>
-					
+
 					<details class="button--tab tab">
 						<summary class="section__headline">Automated Logistic Systems</summary>
 						<div class="prose">
@@ -128,11 +126,11 @@
 						</div>
 					</details>
 				</section>
-				
+
 			</article>
 			<footer class="page__footer">
 				<section class="copyright">
-					&copy; {{ 'now' | date('Y') }} Olivia Lanctot &amp; <a href="//onemohrti.me" target="_blank" rel="nofollow" aria-label="Derek Mohr's website">Derek Mohr</a>
+					&copy; 2019 &ndash; {{ 'now' | date('Y') }} Olivia Lanctot &amp; <a href="//onemohrti.me" target="_blank" rel="nofollow" aria-label="Derek Mohr's website">Derek Mohr</a>
 				</section>
 				<nav class="social">
 					<ul>
@@ -142,43 +140,11 @@
 				</nav>
 			</footer>
 		</main>
-		
-		<!--
-		<main role="main" class="container">
-			<div class="row">
-				<div class="col-sm-8">
-					{% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
-				</div>
-				<div class="col-sm-4 sidebar">
-					<div class="card bg-light">
-						<div class="card-header">{{ site.title }}</div>
-						<div class="card-body">
-							{% if site.subtitle %}<small>{{ site.subtitle }}</small>{% endif %}
-						</div>
-					</div>
-					<div class="card bg-light sidebar-nav">
-						<div class="card-header">Links</div>
-						<div class="card-body">
-							<ul class="nav flex-column">
-								<li class="nav-item"><a class="nav-link" href="http://sculpin.io">sculpin.io</a></li>
-								<li class="nav-item"><a class="nav-link" href="http://twitter.com/getsculpin">@getsculpin</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</main>
-		<footer class="container">
-			<span class="text-muted">&copy; {{ "now"|date("Y") }} {{ site.title }}</span>
-		</footer>
-		-->
 	</div>
 
-	<script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-	<script src="{{ site.url }}/assets/js/lib/vanilla-js-accordion.js"></script>
 	<script src="{{ site.url }}/assets/js/lib/instafeed.min.js"></script>
 	<script src="{{ site.url }}/build/app.js"></script>
-	
+
 </body>
 
 </html>

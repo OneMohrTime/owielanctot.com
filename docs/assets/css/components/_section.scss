@@ -1,0 +1,32 @@
+/* ----------------------------------------
+ * Components / Section
+ * ------------------------------------- */
+
+.section__headline {
+	font-size:  modular-scale(2);
+
+	em {
+		position: absolute;
+		transform: rotate(-15deg) translate3d(-0.5rem, -1.1em, 0);
+		text-transform: lowercase;
+		color: $action-color;
+	}
+}
+
+.section__subheadline {
+	margin-top: $small-spacing / 2;
+	margin-bottom: $small-spacing / 2;
+}
+
+.section__datetime {
+	display: block;
+	margin-bottom: $base-spacing;
+}
+
+.section__intro {
+	max-width: 80ch;
+
+	@include media(">=640px") {
+		margin-bottom: $base-spacing * 3;
+	}
+}

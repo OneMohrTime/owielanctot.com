@@ -2,14 +2,13 @@
 
 // Vendor
 @import
-//	"../../../node_modules/bootstrap/scss/bootstrap",
-//	"../../../node_modules/highlightjs/styles/github.css",
+	// "../../../node_modules/bootstrap/scss/bootstrap",
+	// "../../../node_modules/highlightjs/styles/github.css",
 	"vendor/bourbon/bourbon",
 	"vendor/neat/neat",
 	"vendor/base/base",
 	"vendor/include-media",
 	"vendor/modularscale/modularscale";
-//	"vendor/vanilla-js-accordion";
 
 // Utilities
 @import
@@ -28,5 +27,7 @@
 	"components/banner",
 	"components/buttons",
 	"components/instagram",
+	"components/section",
+	"components/social",
 	"components/tabs";
 

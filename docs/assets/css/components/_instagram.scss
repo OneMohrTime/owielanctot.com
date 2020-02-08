@@ -2,7 +2,9 @@
  * Compontents / Instagram
  * ------------------------------------- */
 
-.instagram {}
+// .instagram {
+
+// }
 
 .instagram__feed {
 	display: grid;
@@ -10,19 +12,48 @@
 	grid-template-rows: repeat(4, auto);
 	grid-gap: $small-spacing;
 	justify-content: start;
-	margin-bottom: 50vh;
+	align-items: center;
+	max-width: 80ch;
+
+	@include media(">=640px") {
+		margin-bottom: 50vh;
+	}
+
+	@include media(">=960px") {
+		align-items: start;
+	}
 }
 
 .instagram__post {
+	position: relative;
 	grid-column: span 1;
 	grid-row: span 1;
-	
+	z-index: 1;
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		width: 100%;
+		width: calc(100% + 7px);
+		height: 100%;
+		height: calc(100% + 7px);
+		transform: translate3d( -2px, -2px, 0 );
+		background-color:map-get( $color, white );
+		background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%231565c0' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+		background-size: 5px 5px;
+		z-index: -1;
+	}
+
 	&:first-child {
 		grid-row: span 4;
 	}
-	
+
 	img {
 		@include size(100%);
-		object-fit: cover;
+		object-fit: contain;
+		z-index: 1;
 	}
 }

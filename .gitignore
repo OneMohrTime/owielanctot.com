@@ -17,11 +17,9 @@ s3.conf
 *~
 
 # Folders
-/vendor
 bbin/
 bin/
 coverage
-gh-pages/
 pkg/
 test/dest
 tmp/*
