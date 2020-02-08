@@ -70,50 +70,38 @@
 				padding-left: $small-spacing;
 				padding-right: $small-spacing;
 				z-index: 1;
-
-				&::after {
-					content: "";
-					position: absolute;
-					left: 0;
-					bottom: 0;
-					display: block;
-					width: 100%;
-					height: 24px;
-					background-color: transparentize( $action-color, 0.5);
-					z-index: -1;
-				}
 			}
+
 			span:nth-child(1) {
 				margin-right: $base-spacing * 2;
 				text-align: left;
-
-				&::after {
-					transform: rotate(5deg);
-				}
 			}
+
 			span:nth-child(2) {
 				padding-left: 1rem;
 				padding-right: 1rem;
 				font-size: modular-scale(3);
 				line-height: 1em;
-				color: map-get($color, white);
-
+				color: map-get($color, 'white');
 
 				&::after {
+					content: "";
+					position: absolute;
 					top: 50%;
-					bottom: auto;
-					height: 150px;
-					transform: translateY( -40% ) rotate(-5deg);
+					left: 0;
+					display: block;
+					width: 100%;
+					height: 250px;
+					transform: translateY( -45% ) rotate(-5deg);
+					background-color: map-get($color, 'blue');
 					background-color: $action-color;
+					z-index: -1;
 				}
 			}
+
 			span:nth-child(3) {
 				margin-left: $base-spacing * 2;
 				text-align: right;
-
-				&::after {
-					transform: rotate(-2deg);
-				}
 			}
 		}
 	}

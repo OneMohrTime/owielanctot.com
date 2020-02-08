@@ -2,6 +2,11 @@
  * Utilities / Mixins
  * ------------------------------------- */
 
+@mixin box-shadow($shadow: 'dark-gray') {
+	box-shadow: 0 1px 3px fade-out(map-get($color, $shadow), 0.88),
+							0 1px 2px fade-out(map-get($color, $shadow), 0.76);
+}
+
 @mixin tab-style() {
 	margin-bottom: $small-spacing;
 	padding: $small-spacing 0;
@@ -13,5 +18,5 @@
 }
 
 @mixin button-style() {
-	
+
 }
