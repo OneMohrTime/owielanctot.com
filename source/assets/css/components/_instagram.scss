@@ -13,9 +13,14 @@
 	grid-gap: $small-spacing;
 	justify-content: start;
 	align-items: center;
+	max-width: 80ch;
 
 	@include media(">=640px") {
 		margin-bottom: 50vh;
+	}
+
+	@include media(">=960px") {
+		align-items: start;
 	}
 }
 
