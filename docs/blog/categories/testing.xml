@@ -3,15 +3,23 @@
     <title><![CDATA[Olivia “Owie” Lanctot]]></title>
     <link href="/blog/categories/testing.xml" rel="self"/>
     <link href="/"/>
-    <updated>2020-02-08T20:26:19+00:00</updated>
-    <id>/</id>
-        <generator uri="http://sculpin.io/">Sculpin</generator>
-            <entry>
-            <title type="html"><![CDATA[Lorem Ipsum]]></title>
-            <link href="/blog/2012/11/27/lorem-ipsum/"/>
-            <updated>2012-11-27T00:00:00+00:00</updated>
-            <id>/blog/2012/11/27/lorem-ipsum/</id>
-            <content type="html"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat congue
+    <updated>2020-05-19T02:27:10+00:00</updated>
+    <id>/</id>    <generator uri="http://sculpin.io/">Sculpin</generator>        <entry>
+            <title type="html"><![CDATA[
+Deprecated: array_key_exists(): Using array_key_exists() on objects is deprecated. Use isset() or property_exists() instead in /Users/fatmac/Sites/owielanctot.com/vendor/twig/twig/src/Extension/CoreExtension.php on line 1592
+Lorem Ipsum]]></title>
+            <link href="
+Deprecated: array_key_exists(): Using array_key_exists() on objects is deprecated. Use isset() or property_exists() instead in /Users/fatmac/Sites/owielanctot.com/vendor/twig/twig/src/Extension/CoreExtension.php on line 1592
+/blog/2012/11/27/lorem-ipsum/"/>
+            <updated>
+Deprecated: array_key_exists(): Using array_key_exists() on objects is deprecated. Use isset() or property_exists() instead in /Users/fatmac/Sites/owielanctot.com/vendor/twig/twig/src/Extension/CoreExtension.php on line 1592
+2012-11-27T00:00:00+00:00</updated>
+            <id>
+Deprecated: array_key_exists(): Using array_key_exists() on objects is deprecated. Use isset() or property_exists() instead in /Users/fatmac/Sites/owielanctot.com/vendor/twig/twig/src/Extension/CoreExtension.php on line 1592
+/blog/2012/11/27/lorem-ipsum/</id>
+            <content type="html"><![CDATA[
+Deprecated: array_key_exists(): Using array_key_exists() on objects is deprecated. Use isset() or property_exists() instead in /Users/fatmac/Sites/owielanctot.com/vendor/twig/twig/src/Extension/CoreExtension.php on line 1592
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat congue
 lacus vel convallis. Cras nisi urna, ultrices non semper quis, ultricies sit
 amet est. Donec nunc velit, consequat a pulvinar a, eleifend id leo. Curabitur
 vel leo eros, vitae elementum purus. Integer id lorem hendrerit purus gravida
@@ -51,7 +59,5 @@ varius orci erat eget leo. Curabitur ut volutpat diam. Phasellus porta neque
 vitae nisi sodales ultrices. Etiam ultricies blandit lorem, id accumsan eros
 facilisis vel. Praesent nulla sapien, laoreet sit amet dapibus sit amet,
 tincidunt vitae neque. Vestibulum aliquam sollicitudin urna, in facilisis dui
-aliquam id.</p>
-]]></content>
-        </entry>
-    </feed>
+aliquam id.</p>]]></content>
+        </entry></feed>

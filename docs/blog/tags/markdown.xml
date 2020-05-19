@@ -3,19 +3,25 @@
     <title><![CDATA[Olivia “Owie” Lanctot]]></title>
     <link href="/blog/tags/markdown.xml" rel="self"/>
     <link href="/"/>
-    <updated>2020-02-08T20:26:19+00:00</updated>
-    <id>/</id>
-        <generator uri="http://sculpin.io/">Sculpin</generator>
-            <entry>
-            <title type="html"><![CDATA[Happy Birthday Sculpin!]]></title>
-            <link href="/blog/2011/12/20/happy-birthday-sculpin/"/>
-            <updated>2011-12-20T00:00:00+00:00</updated>
-            <id>/blog/2011/12/20/happy-birthday-sculpin/</id>
-            <content type="html"><![CDATA[<p>The first commit to the Sculpin repository was made on December 20th, 2011.
+    <updated>2020-05-19T02:27:10+00:00</updated>
+    <id>/</id>    <generator uri="http://sculpin.io/">Sculpin</generator>        <entry>
+            <title type="html"><![CDATA[
+Deprecated: array_key_exists(): Using array_key_exists() on objects is deprecated. Use isset() or property_exists() instead in /Users/fatmac/Sites/owielanctot.com/vendor/twig/twig/src/Extension/CoreExtension.php on line 1592
+Happy Birthday Sculpin!]]></title>
+            <link href="
+Deprecated: array_key_exists(): Using array_key_exists() on objects is deprecated. Use isset() or property_exists() instead in /Users/fatmac/Sites/owielanctot.com/vendor/twig/twig/src/Extension/CoreExtension.php on line 1592
+/blog/2011/12/20/happy-birthday-sculpin/"/>
+            <updated>
+Deprecated: array_key_exists(): Using array_key_exists() on objects is deprecated. Use isset() or property_exists() instead in /Users/fatmac/Sites/owielanctot.com/vendor/twig/twig/src/Extension/CoreExtension.php on line 1592
+2011-12-20T00:00:00+00:00</updated>
+            <id>
+Deprecated: array_key_exists(): Using array_key_exists() on objects is deprecated. Use isset() or property_exists() instead in /Users/fatmac/Sites/owielanctot.com/vendor/twig/twig/src/Extension/CoreExtension.php on line 1592
+/blog/2011/12/20/happy-birthday-sculpin/</id>
+            <content type="html"><![CDATA[
+Deprecated: array_key_exists(): Using array_key_exists() on objects is deprecated. Use isset() or property_exists() instead in /Users/fatmac/Sites/owielanctot.com/vendor/twig/twig/src/Extension/CoreExtension.php on line 1592
+<p>The first commit to the Sculpin repository was made on December 20th, 2011.
 What a trip since then!</p>
 
 <p>Sculpin has always been a big fan of <a href="http://daringfireball.net/projects/markdown/">Markdown</a>. So this post was
-written in Markdown. :)</p>
-]]></content>
-        </entry>
-    </feed>
+written in Markdown. :)</p>]]></content>
+        </entry></feed>

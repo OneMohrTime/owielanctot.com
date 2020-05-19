@@ -3,17 +3,23 @@
     <title><![CDATA[Olivia “Owie” Lanctot]]></title>
     <link href="/blog/tags/static site generator.xml" rel="self"/>
     <link href="/"/>
-    <updated>2020-02-08T20:26:19+00:00</updated>
-    <id>/</id>
-        <generator uri="http://sculpin.io/">Sculpin</generator>
-            <entry>
-            <title type="html"><![CDATA[Balrog]]></title>
-            <link href="/blog/2012/10/16/balrog/"/>
-            <updated>2012-10-16T00:00:00+00:00</updated>
-            <id>/blog/2012/10/16/balrog/</id>
-            <content type="html"><![CDATA[<p>Found out about <a href="http://github.com/igorw/balrog">Balrog</a> today! It looks
+    <updated>2020-05-19T02:27:10+00:00</updated>
+    <id>/</id>    <generator uri="http://sculpin.io/">Sculpin</generator>        <entry>
+            <title type="html"><![CDATA[
+Deprecated: array_key_exists(): Using array_key_exists() on objects is deprecated. Use isset() or property_exists() instead in /Users/fatmac/Sites/owielanctot.com/vendor/twig/twig/src/Extension/CoreExtension.php on line 1592
+Balrog]]></title>
+            <link href="
+Deprecated: array_key_exists(): Using array_key_exists() on objects is deprecated. Use isset() or property_exists() instead in /Users/fatmac/Sites/owielanctot.com/vendor/twig/twig/src/Extension/CoreExtension.php on line 1592
+/blog/2012/10/16/balrog/"/>
+            <updated>
+Deprecated: array_key_exists(): Using array_key_exists() on objects is deprecated. Use isset() or property_exists() instead in /Users/fatmac/Sites/owielanctot.com/vendor/twig/twig/src/Extension/CoreExtension.php on line 1592
+2012-10-16T00:00:00+00:00</updated>
+            <id>
+Deprecated: array_key_exists(): Using array_key_exists() on objects is deprecated. Use isset() or property_exists() instead in /Users/fatmac/Sites/owielanctot.com/vendor/twig/twig/src/Extension/CoreExtension.php on line 1592
+/blog/2012/10/16/balrog/</id>
+            <content type="html"><![CDATA[
+Deprecated: array_key_exists(): Using array_key_exists() on objects is deprecated. Use isset() or property_exists() instead in /Users/fatmac/Sites/owielanctot.com/vendor/twig/twig/src/Extension/CoreExtension.php on line 1592
+<p>Found out about <a href="http://github.com/igorw/balrog">Balrog</a> today! It looks
 like a really nice micro static site generator. Maybe Sculpin and Balrog
-can be friends?</p>
-]]></content>
-        </entry>
-    </feed>
+can be friends?</p>]]></content>
+        </entry></feed>
